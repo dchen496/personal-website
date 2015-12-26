@@ -1,25 +1,26 @@
 $blue: #004488
 
-$blue24: darken($blue, 7%)
-$blue22: darken($blue24, 1%)
-$blue1d: darken($blue24, 2%)
-$blue1b: darken($blue24, 3%)
-$blue1a: darken($blue24, 4%)
-$blue15: darken($blue24, 5%)
-$blue13: darken($blue24, 6%)
-
 html
   height: 100%
-  background: linear-gradient(27deg, $blue15 5px, transparent 5px) 0 5px, linear-gradient(207deg, $blue15 5px, transparent 5px) 10px 0px, linear-gradient(27deg, $blue22 5px, transparent 5px) 0px 10px, linear-gradient(207deg, $blue22 5px, transparent 5px) 10px 5px, linear-gradient(90deg, $blue1b 10px, transparent 10px), linear-gradient($blue1d 25%, $blue1a 25%, $blue1a 50%, transparent 50%, transparent 75%, $blue24 75%, $blue24)
-    color: $blue13
-    size: 20px 20px;
+  background:
+    color: darken($blue, 10%)
+    $blueclear: rgba(0,102,204,.15)
+    $blue2: darken($blue, 5%)
+    $major: 150px
+    $minor: 30px
+    image: linear-gradient($blue2 2px, transparent 2px), linear-gradient(90deg, $blue2 2px, transparent 2px), linear-gradient($blueclear 1px, transparent 1px), linear-gradient(90deg, $blueclear 1px, transparent 1px)
+    size: $major $major, $major $major, $minor $minor, $minor $minor
+    $p1: calc(50% - 1px)
+    $p2: calc(50% - 2px)
+    position: $p2 $p2, $p2 $p2, $p1 $p1, $p1 $p1
+
 body
   padding: 0
   margin: 0
-  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif
+  font: 14px "Roboto", Helvetica, Arial, sans-serif
 
 h1
-  font-size: 30pt
+  font-size: 32pt
 
 h2
   font-weight: 500
@@ -36,7 +37,6 @@ h2
 #header-pic
   width: 300px
   border: 3px solid lighten($blue, 55%)
-  border-radius: 20%
 
 #link-line
   word-spacing: 25px
