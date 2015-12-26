@@ -2,10 +2,19 @@
 
 $blue: #004488
 
+$blue24: darken($blue, 7%)
+$blue22: darken($blue24, 1%)
+$blue1d: darken($blue24, 2%)
+$blue1b: darken($blue24, 3%)
+$blue1a: darken($blue24, 4%)
+$blue15: darken($blue24, 5%)
+$blue13: darken($blue24, 6%)
+
 html
   height: 100%
-  background:
-    color: darken($blue, 10%)
+  background: linear-gradient(27deg, $blue15 5px, transparent 5px) 0 5px, linear-gradient(207deg, $blue15 5px, transparent 5px) 10px 0px, linear-gradient(27deg, $blue22 5px, transparent 5px) 0px 10px, linear-gradient(207deg, $blue22 5px, transparent 5px) 10px 5px, linear-gradient(90deg, $blue1b 10px, transparent 10px), linear-gradient($blue1d 25%, $blue1a 25%, $blue1a 50%, transparent 50%, transparent 75%, $blue24 75%, $blue24)
+    color: $blue13
+    size: 20px 20px;
 body
   padding: 0
   margin: 0
