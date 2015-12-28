@@ -4,11 +4,11 @@ html
   height: 100%
   background:
     color: darken($blue, 10%)
-    $blueclear: rgba(0,102,204,.15)
-    $blue2: darken($blue, 5%)
+    $majorcolor: darken($blue, 5%)
+    $minorcolor: rgba(0,102,204,.15)
     $major: 150px
     $minor: 30px
-    image: linear-gradient($blue2 2px, transparent 2px), linear-gradient(90deg, $blue2 2px, transparent 2px), linear-gradient($blueclear 1px, transparent 1px), linear-gradient(90deg, $blueclear 1px, transparent 1px)
+    image: linear-gradient($majorcolor 2px, transparent 2px), linear-gradient(90deg, $majorcolor 2px, transparent 2px), linear-gradient($minorcolor 1px, transparent 1px), linear-gradient(90deg, $minorcolor 1px, transparent 1px)
     size: $major $major, $major $major, $minor $minor, $minor $minor
     $p1: calc(50% - 1px)
     $p2: calc(50% - 2px)
@@ -20,7 +20,8 @@ body
   font: 14px "Roboto", Helvetica, Arial, sans-serif
 
 h1
-  font-size: 32pt
+  font-weight: 500
+  font-size: 36pt
 
 h2
   font-weight: 500
@@ -36,7 +37,7 @@ h2
 
 #header-pic
   width: 300px
-  border: 3px solid lighten($blue, 55%)
+  border: 2px solid lighten($blue, 55%)
 
 #link-line
   word-spacing: 25px
