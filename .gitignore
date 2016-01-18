@@ -32,3 +32,6 @@ npm-debug.log
 # generated CSS + maps
 public/stylesheets/*.css
 public/stylesheets/*.css.map
+
+# public files
+public/files
